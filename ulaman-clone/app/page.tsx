@@ -38,7 +38,7 @@ export default function Home() {
           images={[
             {
               src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1600&h=1000&fit=crop&q=80",
-              alt: "Ulaman Riverside View",
+              alt: "Aluman Riverside View",
               leftText: "Balanced",
               rightText: "Renewal"
             }
@@ -73,7 +73,7 @@ export default function Home() {
           title="Reconnect With Yourself In<br/>Luxurious Comfort."
           buttonText="BOOK YOUR STAY"
           buttonHref="#book"
-          optionalSubtitle="@ulamanbali"
+          optionalSubtitle="@alumanbali"
         />
       </LazySection>
 

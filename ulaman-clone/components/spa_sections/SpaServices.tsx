@@ -25,13 +25,13 @@ const SpaServices = () => {
     },
     {
       title: 'Tree House Spa',
-      description: 'Our Tree House Spa, perched over Ulaman Waterfall and River, |BREAK|is the only tree house spa in Bali and Southeast Asia, built |BREAK|around the most spiritual tree on the property.',
+      description: 'Our Tree House Spa, perched over Aluman Waterfall and River, |BREAK|is the only tree house spa in Bali and Southeast Asia, built |BREAK|around the most spiritual tree on the property.',
       openingHours: 'Opening hours: 7 AM to 6 PM',
       image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=500&h=600&fit=crop'
     },
     {
       title: 'Riverside Romantic Bath',
-      description: 'Located next to the Ulaman river and waterfalls, our hand-carved stone |BREAK|bathtub is perfect for flower, moringa and Epsom salt baths after an |BREAK|exclusive treatment at our Tree House Spa above. Enjoy a private, romantic |BREAK|experience in your private bamboo oasis with hand-beaded curtains.',
+      description: 'Located next to the Aluman river and waterfalls, our hand-carved stone |BREAK|bathtub is perfect for flower, moringa and Epsom salt baths after an |BREAK|exclusive treatment at our Tree House Spa above. Enjoy a private, romantic |BREAK|experience in your private bamboo oasis with hand-beaded curtains.',
       openingHours: 'Opening hours: 7 AM to 6 PM',
       image: 'https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=500&h=600&fit=crop'
     }

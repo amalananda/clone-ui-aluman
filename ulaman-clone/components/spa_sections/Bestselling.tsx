@@ -36,14 +36,14 @@ const treatments: Treatment[] = [
       `Experience our rejuvenating spa package that begins with a Foot Clean, followed by a Lymphatic Detox Massage and a Balinese Salt Scrub for silky-smooth skin. Conclude with a Bentonite Clay Body Wrap to detoxify and boost skin elasticity and collagen levels. This holistic treatment is enhanced with a complimentary Green Juice for added nourishment. Treat yourself to this luxurious spa journey and emerge feeling renewed and radiant.`
   },
   {
-    id: 'ulaman',
-    title: 'Ulaman Esalen Massage',
+    id: 'aluman',
+    title: 'Aluman Esalen Massage',
     price: 'IDR 900K • 75 min',
     duration: 'IDR 1100K • 90 min',
     image:
       'https://images.unsplash.com/photo-1594928095147-38e21a20c324?auto=format&fit=crop&q=80&w=800&h=800',
     description:
-      `Ulaman Esalen massage integrates a holistic approach to massage therapy, blending techniques like Lomi-Lomi, stretching, long flowing strokes, gentle rocking and passive joint movements. This combination creates a deeply relaxing and nurturing experience, emphasizing the mind-body connection for enhanced relaxation, stress relief and overall well-being.`
+      `Aluman Esalen massage integrates a holistic approach to massage therapy, blending techniques like Lomi-Lomi, stretching, long flowing strokes, gentle rocking and passive joint movements. This combination creates a deeply relaxing and nurturing experience, emphasizing the mind-body connection for enhanced relaxation, stress relief and overall well-being.`
   }
 ]
 
@@ -132,7 +132,7 @@ const TreatmentCard = ({
           <div className="flex items-center gap-1.5 text-sm font-light tracking-wider" style={{ color: ACCENT_COLOR }}>
             <Clock size={14} className="md:w-4 md:h-4" strokeWidth={1.2} />
             <span className="text-[11px] md:text-xs lg:text-[13px] font-basis text-[#343e35]">
-              {treatment.id === 'ulaman'
+              {treatment.id === 'aluman'
                 ? treatment.price
                 : `${treatment.price} / ${treatment.duration}`}
             </span>
@@ -152,7 +152,7 @@ const TreatmentCard = ({
         <div className="inline-flex items-center gap-1.5 text-white text-xs font-light tracking-wider mb-4 md:mb-6">
           <Clock size={12} className="md:w-[14px] md:h-[14px]" strokeWidth={1} />
           <span className="text-xs md:text-sm font-light tracking-wider">
-            {treatment.id === 'ulaman'
+            {treatment.id === 'aluman'
               ? treatment.price
               : `${treatment.price} / ${treatment.duration}`}
           </span>

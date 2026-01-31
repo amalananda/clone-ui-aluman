@@ -59,7 +59,7 @@ export default function Facilities({
         <div className="relative group overflow-hidden rounded-lg">
           <Image
             src={facilitiesImage}
-            alt="Luxury spa bath with flower petals and candles - Ulaman Bali"
+            alt="Luxury spa bath with flower petals and candles - Aluman Bali"
             className="w-full h-[700px] object-cover transition-transform duration-700 group-hover:scale-110"
             width={600}
             height={800}
@@ -72,7 +72,7 @@ export default function Facilities({
         <div className="relative group overflow-hidden rounded-lg">
           <Image
             src={benefitsImage}
-            alt="Hammock over lake - Ulaman Bali"
+            alt="Hammock over lake - Aluman Bali"
             className="w-full h-[700px] object-cover transition-transform duration-700 group-hover:scale-110"
             width={600}
             height={800}

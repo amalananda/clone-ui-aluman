@@ -23,8 +23,8 @@ export default function AvatarTreeHousePage() {
         title="Avatar Tree House"
         subtitle="4 Units Total | 64m2"
         paragraphs={[
-          "Elevated among the treetops, Ulaman's Avatar Tree House Villas offer a truly unique<br/> sanctuary, surrounded by breathtaking rice field views and lush jungle landscapes.<br/> Perched 9 meters above ground and accessed via a striking bamboo-woven tunnel,<br/> these villas immerse guests in a seamless blend of architectural elegance and<br/> natural serenity. Inside, the spacious interiors feature handcrafted wooden<br/> furnishings, intricately carved accents and soft ambient lighting that enhance the<br/> villa's tranquil ambiance.",
-          "Expansive glass windows provide panoramic views of Ulaman and its surroundings,<br/> while each villa also includes a Sky Balcony for private dining, automatic curtains<br/> and a 360° swivel door leading to a generous ensuite bathroom with a skylight and<br/> a dedicated makeup area. Thoughtfully designed for both relaxation and inspiration,<br/> the Avatar Tree House Villas offer luxurious comfort and a deep, immersive<br/> connection to nature."
+          "Elevated among the treetops, Aluman's Avatar Tree House Villas offer a truly unique<br/> sanctuary, surrounded by breathtaking rice field views and lush jungle landscapes.<br/> Perched 9 meters above ground and accessed via a striking bamboo-woven tunnel,<br/> these villas immerse guests in a seamless blend of architectural elegance and<br/> natural serenity. Inside, the spacious interiors feature handcrafted wooden<br/> furnishings, intricately carved accents and soft ambient lighting that enhance the<br/> villa's tranquil ambiance.",
+          "Expansive glass windows provide panoramic views of Aluman and its surroundings,<br/> while each villa also includes a Sky Balcony for private dining, automatic curtains<br/> and a 360° swivel door leading to a generous ensuite bathroom with a skylight and<br/> a dedicated makeup area. Thoughtfully designed for both relaxation and inspiration,<br/> the Avatar Tree House Villas offer luxurious comfort and a deep, immersive<br/> connection to nature."
         ]}
       />
       <GalleryRooms />
@@ -61,7 +61,7 @@ export default function AvatarTreeHousePage() {
         title="Reconnect With Yourself In<br/>Luxurious Comfort."
         buttonText="BOOK YOUR STAY"
         buttonHref="#book"
-        optionalSubtitle="@ulamanbali"
+        optionalSubtitle="@alumanbali"
       />
       <LocationMap />
       <Footer />

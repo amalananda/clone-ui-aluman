@@ -27,7 +27,7 @@ const DayPass = () => {
   const sliderData: Slide[] = [
     {
       src: 'https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&h=1000&fit=crop&q=80',
-      alt: 'Ulaman Eco Resort Exterior View',
+      alt: 'Aluman Eco Resort Exterior View',
       title: titleText,
       body: bodyText
     },

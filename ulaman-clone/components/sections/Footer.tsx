@@ -19,7 +19,7 @@ const Footer = () => {
       { label: 'Villas', href: '#villas' },
       { label: 'Spa', href: '#spa' },
       { label: 'Experiences', href: '#experiences' },
-      { label: 'Ulaman Map', href: '#map' },
+      { label: 'Aluman Map', href: '#map' },
       { label: 'Articles', href: '#articles' },
       { label: 'Video Testimonials', href: '#testimonials' }
     ]
@@ -211,15 +211,15 @@ const Footer = () => {
               </UnderlineLink>
               <div className="flex gap-x-3 md:gap-x-8">
                 <UnderlineLink
-                  href="#ulaman-bookings"
+                  href="#aluman-bookings"
                   className="text-[#EFEBE2] hover:text-white font-basis text-[0.734rem] md:text-[0.824rem]"
                   underlineColor="#7A8B7F"
                 >
-                  Ulaman Bookings
+                  Aluman Bookings
                 </UnderlineLink>
                 <span className="text-[#EFEBE2] text-[0.734rem] md:text-[0.824rem] md:w-auto">Kids under 6 are not advised.</span>
               </div>
-              <span className="w-full text-[#EFEBE2] text-[0.734rem] md:text-[0.824rem] md:w-auto">© 2024-2025 Two Moons Studio for ulamanbali.com. All Rights Reserved</span>
+              <span className="w-full text-[#EFEBE2] text-[0.734rem] md:text-[0.824rem] md:w-auto">© 2024-2025 Two Moons Studio for alumanbali.com. All Rights Reserved</span>
               <span className="w-full text-[#EFEBE2] text-[0.734rem] md:text-[0.824rem] md:w-auto">Made With ❤︎ By Two Suns Studio </span>
             </div>
           </div>

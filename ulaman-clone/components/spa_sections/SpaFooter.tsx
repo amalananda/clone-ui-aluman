@@ -47,7 +47,7 @@ const SpaFooter = () => {
               Address
             </h3>
             <div className="font-basis text-[#9A816D] text-sm leading-relaxed mt-2 md:mt-6 ">
-              <p>Ulaman Road, Buwit, Kediri,</p>
+              <p>Aluman Road, Buwit, Kediri,</p>
               <p>Tabanan Regency,</p>
               <p>Bali 82121</p>
             </div>
@@ -127,10 +127,10 @@ const SpaFooter = () => {
               <div className="flex gap-18">
                 <a href="#" className="hover:opacity-70 transition-opacity">TERMS</a>
                 <a href="#" className="hover:opacity-70 transition-opacity">PRIVACY</a>
-                <a href="#" className="hover:opacity-70 transition-opacity">VISIT ULAMANBALI.COM</a>
+                <a href="#" className="hover:opacity-70 transition-opacity">VISIT ALUMANBALI.COM</a>
               </div>
               <div className="font-basis text-[#9A816D] text-[0.62rem] md:text-[0.57rem] text-start md:flex-1">
-                © 2024-2025 TWO MOONS STUDIO FOR RIVERSIDESPA@ULAMAN.COM. ALL RIGHTS RESERVED
+                © 2024-2025 TWO MOONS STUDIO FOR RIVERSIDESPA@ALUMAN.COM. ALL RIGHTS RESERVED
               </div>
             </div>
 
@@ -149,7 +149,7 @@ const SpaFooter = () => {
       <div className="bg-[#EDE6D8] py-5 md:py-6 text-center">
         <div className="font-basis text-[#B79F8C] text-[0.79rem] md:text-[0.935rem]">
           <p className="mb-2">
-            Not staying at Ulaman?{' '}
+            Not staying at Aluman?{' '}
             <UnderlineLink href="/spa/day-pass"
               className="inline-block translate-y-[5px]"
               textColor="text-[#B79F8C]"

@@ -60,7 +60,7 @@ const Experiences = () => {
     {
       id: 1,
       title: 'Floating Lake',
-      subtitle: 'A <i>luxurious floating villa</i> on Ulaman’s bio-filtered lake.',
+      subtitle: 'A <i>luxurious floating villa</i> on Aluman’s bio-filtered lake.',
       images: FloatingLakeImages,
       link: '/rooms/floating-lake'
     },

@@ -130,7 +130,7 @@ const LocationMap = () => {
               Tucked Within Majestic<br />Balinese Nature.
             </h2>
             <p className="text-[#EFEBE2] text-[11.76px] md:text-lg font-basis leading-relaxed">
-              Strategically located near popular areas like Canggu and Ubud, experience tranquil nature and luxury. With endless activities, you&apos;ll never want to leave Ulaman.
+              Strategically located near popular areas like Canggu and Ubud, experience tranquil nature and luxury. With endless activities, you&apos;ll never want to leave Aluman.
             </p>
           </div>
 
@@ -177,7 +177,7 @@ const LocationMap = () => {
                 <rect x="600" y="450" width="200" height="150" fill="#3A4B3F" opacity="0.3" />
               </svg>
 
-              {/* Ulaman Logo/Marker */}
+              {/* Aluman Logo/Marker */}
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <div className="text-amber-500 text-4xl font-serif tracking-wider">
                   <svg width="40" height="40" viewBox="0 0 60 60" className="fill-current md:w-[60px] md:h-[60px]">

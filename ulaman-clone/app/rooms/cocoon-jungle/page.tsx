@@ -23,7 +23,7 @@ export default function CocoonJunglePage() {
         title="Cocoon Jungle"
         subtitle="2 Units Total | 72m2"
         paragraphs={[
-          "Elevated among the treetops, the Cocoon Jungle Villa is a bamboo-woven<br/> sanctuary featuring a black bamboo bathroom and a spacious private balcony—<br/>perfect for romantic breakfasts overlooking the jungle, garden, and pool. These<br/> elegantly designed, cocoon-like villas offer bamboo floors, the largest private<br/> balcony among all room types, and the most refined ensuite bathroom at Ulaman.<br/> Inside, you'll find a luxurious king-sized bed, automatic curtains, and thoughtfully<br/> curated interiors made from exotic natural materials, delivering an experience of<br/> unparalleled comfort and elevated tropical charm."
+          "Elevated among the treetops, the Cocoon Jungle Villa is a bamboo-woven<br/> sanctuary featuring a black bamboo bathroom and a spacious private balcony—<br/>perfect for romantic breakfasts overlooking the jungle, garden, and pool. These<br/> elegantly designed, cocoon-like villas offer bamboo floors, the largest private<br/> balcony among all room types, and the most refined ensuite bathroom at Aluman.<br/> Inside, you'll find a luxurious king-sized bed, automatic curtains, and thoughtfully<br/> curated interiors made from exotic natural materials, delivering an experience of<br/> unparalleled comfort and elevated tropical charm."
         ]}
         buttonText="BOOK THIS ROOM"
       />
@@ -61,7 +61,7 @@ export default function CocoonJunglePage() {
         title="Reconnect With Yourself In<br/>Luxurious Comfort."
         buttonText="BOOK YOUR STAY"
         buttonHref="#book"
-        optionalSubtitle="@ulamanbali"
+        optionalSubtitle="@alumanbali"
       />
       <LocationMap />
       <Footer />

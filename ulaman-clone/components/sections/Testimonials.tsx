@@ -23,13 +23,13 @@ export default function Testimonials({ showContinueReading = false }: Testimonia
       name: 'Anne & Steve',
       date: 'May 2024',
       quote: 'A truly memorable experience.',
-      review: 'Fabulous architecture, beautiful natural setting, and wonderful staff combine to provide a truly memorable experience. Our stay at Ulaman Eco Resort was one we will remember forever. We came to just relax in this amazing setting with its beautiful architecture set around a waterfall and surrounded by rice paddies...'
+      review: 'Fabulous architecture, beautiful natural setting, and wonderful staff combine to provide a truly memorable experience. Our stay at Aluman Eco Resort was one we will remember forever. We came to just relax in this amazing setting with its beautiful architecture set around a waterfall and surrounded by rice paddies...'
     },
     {
       name: 'Beata B',
       date: 'Apr. 2024',
       quote: 'Mind-blowing architecture and top-notch service!',
-      review: 'From the moment you step into this incredible resort, you feel like you are in another world. A world where imagination has no limits and where your body and mind can recharge to the fullest. We were blown away by the incredible architecture and design. We loved our stay at Ulaman...'
+      review: 'From the moment you step into this incredible resort, you feel like you are in another world. A world where imagination has no limits and where your body and mind can recharge to the fullest. We were blown away by the incredible architecture and design. We loved our stay at Aluman...'
     }
   ]
 

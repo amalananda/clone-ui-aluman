@@ -36,7 +36,7 @@ export default function SpaPage() {
         leftNavItems={[
           { label: 'Home', href: '/' },
           { label: 'Treatments', href: '#treatments' },
-          { label: 'Ulaman', href: '#ulaman' },
+          { label: 'Aluman', href: '#aluman' },
           { label: 'Contact', href: '#contact' }
         ]}
         rightButton={{
@@ -86,7 +86,7 @@ export default function SpaPage() {
           title="A sanctuary of calm and<br/> deep relaxation."
           subtitle=""
           paragraphs={[
-            "Experience Riverside Spa's serene luxury with our elegantly designed dome and<br/> state-of-the-art facilities. Enjoy rejuvenating treatments, including massage rooms, hot and cold plunge pools and an infrared sauna, all set to the soothing sounds of the Ulaman River"
+            "Experience Riverside Spa's serene luxury with our elegantly designed dome and<br/> state-of-the-art facilities. Enjoy rejuvenating treatments, including massage rooms, hot and cold plunge pools and an infrared sauna, all set to the soothing sounds of the Aluman River"
           ]}
           titleClassName='text-2xl lg:text-4xl text-[#b79f8c]'
           paragraphClassName='text-sm lg:text-base text-[#343e35]'
@@ -161,7 +161,7 @@ export default function SpaPage() {
           title="Enchanting amenities for<br/> ultimate relaxation."
           subtitle=""
           paragraphs={[
-            "Discover Riverside Spa's unique amenities with the floating glass-lit floor,<br/> large leaf-shaped hammocks over the river and glowing backlit bathtubs<br/> for a serene flower bath. Enjoy our relaxing hot and cold plunge pools<br/> and detoxify in the infrared sauna and steam room, all while surrounded<br/> by the soothing sounds of the Ulaman River."
+            "Discover Riverside Spa's unique amenities with the floating glass-lit floor,<br/> large leaf-shaped hammocks over the river and glowing backlit bathtubs<br/> for a serene flower bath. Enjoy our relaxing hot and cold plunge pools<br/> and detoxify in the infrared sauna and steam room, all while surrounded<br/> by the soothing sounds of the Aluman River."
           ]}
           titleClassName='text-2xl lg:text-4xl text-[#b79f8c]'
           paragraphClassName='text-sm lg:text-base text-[#343e35]'
@@ -226,7 +226,7 @@ export default function SpaPage() {
         titleDesktop="Book your luxurious<br/>spa experience today!"
         buttonText="BOOK NOW"
         buttonHref="#learnmore"
-        optionalSubtitle="@riversidebyulaman"
+        optionalSubtitle="@riversidebyaluman"
         titleSize="text-[1.56rem] lg:text-[2.16rem]"
       />
       <SpaFooter />

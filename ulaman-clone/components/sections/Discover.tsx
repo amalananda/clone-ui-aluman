@@ -68,7 +68,7 @@ const Discover = () => {
       <div className="max-w-7xl mx-auto px-8">
         <div className="mb-12">
           <h2 className="text-4xl md:text-5xl font-americana text-[#C69C4D] mb-4">
-            Discover Ulaman<br />From Above
+            Discover Aluman<br />From Above
           </h2>
           <div className="flex items-center gap-2 text-[#C69C4D]">
             <div className="w-3 h-3 bg-amber-600 rounded-full animate-pulse"></div>

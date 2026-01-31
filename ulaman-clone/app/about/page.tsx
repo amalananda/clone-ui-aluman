@@ -38,7 +38,7 @@ export default function AboutPage() {
 
   const teamSlides = [
     {
-      label: '(Spot Dino in the middle!)',
+      label: '(Spot Mono in the middle!)',
       images: [
         'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&h=600&fit=crop',
         'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop'
@@ -116,7 +116,7 @@ export default function AboutPage() {
 
             <div className="space-y-6 text-stone-700 text-base leading-relaxed">
               <p>
-                At Ulaman, our award-winning vision and commitment to eco-living and sustainability principles have been evident since the beginning. We&apos;ve designed Ulaman using all <em>local, sustainable, and eco-friendly materials</em>, some sourced directly on-site. Our structures feature locally sourced bamboo and &apos;Rammed Earth&apos; walls, exposing natural elements like earth, sand, lime, and gravel.
+                At Aluman, our award-winning vision and commitment to eco-living and sustainability principles have been evident since the beginning. We&apos;ve designed Aluman using all <em>local, sustainable, and eco-friendly materials</em>, some sourced directly on-site. Our structures feature locally sourced bamboo and &apos;Rammed Earth&apos; walls, exposing natural elements like earth, sand, lime, and gravel.
               </p>
               <p>
                 Eco-conscious practices are integral to our daily operations, including a solar power facility, a no-plastic policy, organic gardens, composting, natural pest control, chemical-free amenities, and filtered well water. These initiatives demonstrate our dedication to <em>leading the hospitality industry in minimizing environmental impact through sustainable operations.</em>
@@ -175,7 +175,7 @@ export default function AboutPage() {
 
             <div className="space-y-6 text-stone-700 text-base leading-relaxed">
               <p>
-                The heart and soul of Ulaman is our captivating bamboo architecture, featuring unimaginable curved arches and roofs that define our resort as a timeless avatar-like masterpiece. Seamlessly integrated across the entire resort, these bamboo structures rise gracefully from the earth, <em>designed around the existing landscape to blend naturally with the jungle and river surroundings.</em> Bold yet elegant, they leave a lasting impression on every guest fortunate enough to experience their beauty.
+                The heart and soul of Aluman is our captivating bamboo architecture, featuring unimaginable curved arches and roofs that define our resort as a timeless avatar-like masterpiece. Seamlessly integrated across the entire resort, these bamboo structures rise gracefully from the earth, <em>designed around the existing landscape to blend naturally with the jungle and river surroundings.</em> Bold yet elegant, they leave a lasting impression on every guest fortunate enough to experience their beauty.
               </p>
               <p>
                 From the elaborate bamboo and rammed earth lobby to the cocoon-shaped entrance of the main house and the bamboo grand staircase, each detail is crafted to inspire awe. Immerse yourself in a transformative <em>architectural paradise where luxury meets natural beauty</em>, inviting you to discover serenity and wonder.
@@ -194,7 +194,7 @@ export default function AboutPage() {
       <section ref={timelineContainerRef} className="relative py-24 px-4 sm:px-6 lg:px-8">
         <header className="max-w-7xl mx-auto text-center mb-16">
           <div className='text-brand font-americana text-[#C69C4D]'>
-            <p className='text-[1.3vw]'>The Ulaman Story </p>
+            <p className='text-[1.3vw]'>The Aluman Story </p>
             <h3 className="heading display-3 text-[2.5vw]">Let&apos;s start from the </h3>
             <h3 className="heading display-3 text-[2.5vw]">very beginning.</h3>
           </div>
@@ -245,7 +245,7 @@ export default function AboutPage() {
               <p className="text-sm text-stone-600 mb-2">2018</p>
               <h3 className="text-3xl md:text-4xl font-serif text-[#c9a961] mb-6">Finding the land</h3>
               <p className="text-stone-700 leading-relaxed">
-                In 2018, a friend named Micca introduced Dino to an enchanting piece of natural waterfall jungle land near Kaba Keba in the region of Tabanan. Micca initially proposed a joint venture for her hippy-style community dream, but their visions didn&apos;t align, leading both to walk away from the land. However, <em>the remote and magical jungle waterfall remained etched in Dino&apos;s mind</em>, and over time, he felt a compelling urge to return and find the land and its owner. Eventually, he located the beautiful old landowner lady who, over time, agreed to lease the land to him.
+                In 2018, a friend named Micca introduced Mono to an enchanting piece of natural waterfall jungle land near Kaba Keba in the region of Tabanan. Micca initially proposed a joint venture for her hippy-style community dream, but their visions didn&apos;t align, leading both to walk away from the land. However, <em>the remote and magical jungle waterfall remained etched in Mono&apos;s mind</em>, and over time, he felt a compelling urge to return and find the land and its owner. Eventually, he located the beautiful old landowner lady who, over time, agreed to lease the land to him.
               </p>
             </div>
           </div>
@@ -262,7 +262,7 @@ export default function AboutPage() {
               <p className="text-sm text-stone-600 mb-2">2018</p>
               <h3 className="text-3xl md:text-4xl font-serif text-[#c9a961] mb-6">The Next Steps</h3>
               <p className="text-stone-700 leading-relaxed">
-                Dino then connected with Charlie Hearn of Inspiral Architects recognized as a &apos;green architect&apos; within Bali&apos;s eco-conscious community. Although Charlie did not have much experience in Bamboo construction his vision perfectly aligned with Dino&apos;s dream of integrating architectural design with the surrounding jungle and landscape. The initial over-the-top design and extraordinary roof lines proposed by Charlie, using bamboo, surpassed all expectations.
+                Mono then connected with Charlie Hearn of Inspiral Architects recognized as a &apos;green architect&apos; within Bali&apos;s eco-conscious community. Although Charlie did not have much experience in Bamboo construction his vision perfectly aligned with Mono&apos;s dream of integrating architectural design with the surrounding jungle and landscape. The initial over-the-top design and extraordinary roof lines proposed by Charlie, using bamboo, surpassed all expectations.
               </p>
             </div>
           </div>
@@ -282,26 +282,26 @@ export default function AboutPage() {
               <p className="text-sm text-stone-600 mb-2">2020</p>
               <h3 className="text-3xl md:text-4xl font-serif text-[#c9a961] mb-6">The Build</h3>
               <p className="text-stone-700 leading-relaxed">
-                Once it was decided that Dino was building a retreat-style hotel,
+                Once it was decided that Mono was building a retreat-style hotel,
                 <em>the design concept shifted to include more villas than initially planned.
-                </em> Practical additions for hotel guests, such as reception, dining, office, and yoga areas, were incorporated. Dino, with his unique style and inspirations, hired local Balinese stone carvers to bring the original cliffside wall to life with 3D lifelike carvings depicting Buddha&apos;s journey, drunken monkeys around his new wine cave, a hidden Kama Sutra corner, and the &apos;sacred tree&apos; house over the Ulaman river. <em>The build took just over a year</em>, during which Dino learned all about the local materials and construction techniques. Next, it was time to find a team and staff to start the business.
+                </em> Practical additions for hotel guests, such as reception, dining, office, and yoga areas, were incorporated. Mono, with his unique style and inspirations, hired local Balinese stone carvers to bring the original cliffside wall to life with 3D lifelike carvings depicting Buddha&apos;s journey, drunken monkeys around his new wine cave, a hidden Kama Sutra corner, and the &apos;sacred tree&apos; house over the Aluman river. <em>The build took just over a year</em>, during which Mono learned all about the local materials and construction techniques. Next, it was time to find a team and staff to start the business.
               </p>
             </div>
           </div>
 
-          {/* 2024 - Ulaman Today */}
+          {/* 2024 - Aluman Today */}
           <div ref={timeline4Ref} className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative">
             <div className="lg:order-2">
               <div className="relative aspect-square rounded-lg overflow-hidden shadow-xl">
-                <Image src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=800&fit=crop" alt="Ulaman today" fill sizes="100vw" className="object-cover" priority />
+                <Image src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=800&fit=crop" alt="Aluman today" fill sizes="100vw" className="object-cover" priority />
               </div>
             </div>
 
             <div className="lg:order-1">
               <p className="text-sm text-stone-600 mb-2">2024</p>
-              <h3 className="text-3xl md:text-4xl font-serif text-[#c9a961] mb-6">Ulaman Today</h3>
+              <h3 className="text-3xl md:text-4xl font-serif text-[#c9a961] mb-6">Aluman Today</h3>
               <p className="text-stone-700 leading-relaxed">
-                Dino and Charlie have continued their collaboration, combining Inspiral&apos;s award-winning architectural designs with nature and Dino&apos;s dedication to meticulous detail and unparalleled standards in hospitality and cuisine. <em>This synergy has shaped Ulaman Eco Luxury Resort into what it is today.</em> Dino states, &quot;Our biggest challenge and achievement is maintaining a delicate balance between &apos;eco and luxury&apos;, a feat very few hotels in the world have managed as well as we have.&quot;
+                Mono and Rano have continued their collaboration, combining Inspiral&apos;s award-winning architectural designs with nature and Mono&apos;s dedication to meticulous detail and unparalleled standards in hospitality and cuisine. <em>This synergy has shaped Aluman Eco Luxury Resort into what it is today.</em> Mono states, &quot;Our biggest challenge and achievement is maintaining a delicate balance between &apos;eco and luxury&apos;, a feat very few hotels in the world have managed as well as we have.&quot;
               </p>
             </div>
           </div>
@@ -313,7 +313,7 @@ export default function AboutPage() {
         <div className="max-w-[1600px] mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-5xl font-americana text-[#c9a961] mb-4">Gallery</h2>
-            <p className="text-[#c9a961] text-sm md:text-base">The Journey of Ulaman</p>
+            <p className="text-[#c9a961] text-sm md:text-base">The Journey of Aluman</p>
           </div>
 
           {galleryLoading ? (
@@ -370,12 +370,12 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
-              <h2 className="text-4xl md:text-5xl font-serif text-[#c9a961] leading-tight">Meet the Ulaman Family</h2>
+              <h2 className="text-4xl md:text-5xl font-serif text-[#c9a961] leading-tight">Meet the Aluman Family</h2>
             </div>
 
             <div className="space-y-6">
               <p className="text-stone-700 leading-relaxed">
-                At Ulaman, our staff is <em>the heart and soul of our mission</em>, embodying the Balinese family spirit and community values. Our dedication to service excellence and a genuine love for what we do creates an unforgettable experience for our guests, allowing them to feel a part of the Ulaman family. Our staff&apos;s commitment ensures that <em>everyone who visits leaves inspired, rejuvenated, and deeply touched</em> by the warmth and authenticity of Balinese people and culture.
+                At Aluman, our staff is <em>the heart and soul of our mission</em>, embodying the Balinese family spirit and community values. Our dedication to service excellence and a genuine love for what we do creates an unforgettable experience for our guests, allowing them to feel a part of the Aluman family. Our staff&apos;s commitment ensures that <em>everyone who visits leaves inspired, rejuvenated, and deeply touched</em> by the warmth and authenticity of Balinese people and culture.
               </p>
 
               <div className="pt-8">
@@ -383,8 +383,8 @@ export default function AboutPage() {
                   <path d="M20,50 Q40,20 60,50 T100,50" stroke="#c9a961" strokeWidth="2" fill="none" />
                 </svg>
                 <p className="text-sm text-stone-600 mt-2">
-                  Quote from Dino Magnatta,<br />
-                  Founder of Ulaman
+                  Quote from Mono,<br />
+                  Founder of Aluman
                 </p>
               </div>
             </div>
@@ -396,7 +396,7 @@ export default function AboutPage() {
         title="Escape the stress of modern life and join<br/>us on a journey to wellness."
         buttonText="BOOK YOUR STAY"
         buttonHref="#booking"
-        optionalSubtitle="@ulamanbali"
+        optionalSubtitle="@alumanbali"
       />
       <LocationMap />
       <Footer />

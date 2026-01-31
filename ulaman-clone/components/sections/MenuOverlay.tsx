@@ -80,22 +80,34 @@ export const FullMenuOverlay = ({
               {/* Center Logo */}
               {showLogo && (
                 <div className="absolute left-1/2 -translate-x-1/2 text-center">
-                  <div className="text-[#C69C4D] mb-1">
+                  <div className="text-[#C69C4D] -mt-2 ">
                     <svg
-                      width="32"
-                      height="32"
-                      viewBox="0 0 40 40"
+                      width="64"
+                      height="64"
+                      viewBox="0 0 200 200"
                       fill="currentColor"
-                      className="mx-auto md:w-10 md:h-10"
+                      className="mx-auto md:w-25 md:h-25"
                     >
-                      <path d="M20 5 L25 15 L20 25 L15 15 Z M20 15 L25 25 L20 35 L15 25 Z" />
-                      <circle cx="20" cy="20" r="2" />
+                      {/* Lotus flower petals */}
+                      <path d="M100 60 C80 70, 65 85, 65 100 L75 105 C75 92, 85 78, 100 70 C115 78, 125 92, 125 105 L135 100 C135 85, 120 70, 100 60 Z" />
+                      <path d="M100 75 C88 82, 78 92, 78 105 L85 108 C85 97, 92 87, 100 82 C108 87, 115 97, 115 108 L122 105 C122 92, 112 82, 100 75 Z" />
+
+                      {/* Center circle */}
+                      <ellipse cx="100" cy="110" rx="22" ry="12" />
+
+                      {/* Bottom petals */}
+                      <path d="M78 110 L72 130 L82 133 L85 110 Z" />
+                      <path d="M122 110 L128 130 L118 133 L115 110 Z" />
+                      <path d="M88 112 L83 132 L93 135 L95 112 Z" />
+                      <path d="M112 112 L117 132 L107 135 L105 112 Z" />
+                      <path d="M100 114 L98 135 L102 135 L100 114 Z" />
                     </svg>
                   </div>
-                  <h1 className="text-base md:text-lg tracking-[0.2rem] -mt-2 font-basis text-[#C69C4D]">
+                  <h1 className="text-base md:text-lg tracking-[0.2rem] -mt-6 font-basis text-[#C69C4D]">
                     {logoText}
                   </h1>
-                  <p className="text-[9px] md:text-[11px] uppercase text-[#C69C4D] -mt-2 font-basis mt-0.5">
+                  <p className="text-[9px] md:text-[11px] uppercase text-[#C69C4D] -mt-6
+                  _ font-basis mt-0.5">
                     {logoSubtext}
                   </p>
                 </div>

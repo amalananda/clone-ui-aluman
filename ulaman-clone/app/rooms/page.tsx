@@ -45,7 +45,7 @@ export default function Home() {
         titleDesktop="Experience nature, comfort, and<br/>luxury like never before."
         buttonText="BOOK YOUR STAY"
         buttonHref="#learnmore"
-        optionalSubtitle="@ulamanbali"
+        optionalSubtitle="@alumanbali"
         titleSize="text-[1.583rem] lg:text-[2.185rem]"
       />
       <LocationMap />

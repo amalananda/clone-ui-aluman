@@ -43,7 +43,7 @@ export default function RetreatsPage() {
       title: 'Detox & Juice Cleanse Program',
       subtitle: '',
       nights: ['4 Nights', '6 Nights', '8 Nights'],
-      description: `Improve your health and well-being with Ulaman's carefully planned <br/>
+      description: `Improve your health and well-being with Aluman's carefully planned <br/>
       detox programs. Choose from 4, 6, or 8 nights of personalized <br/>
       cleansing journeys, each offering a mix of renewal, healing and <br/>
       balance.`,
@@ -88,7 +88,7 @@ export default function RetreatsPage() {
       {/* SECTION 2: Introduction Text */}
       <IntroSection
         title="Discover your path to<br />wellness and growth."
-        content="<p>At Ulaman we redefine luxury as an experience that not only pampers the senses but also nurtures <br class='hidden lg:block' />the soul. Nestled in a pristine natural environment, our eco-luxury retreat is a sanctuary designed to <br class='hidden lg:block' />inspire healing and transformation. We believe in the power of dedicated attention and care. That's <br class='hidden lg:block' />why our year-round individualized retreat programs are tailored to suit your every need. Whether <br class='hidden lg:block' /> you seek relaxation, rejuvenation or profound inner change, our meticulously designed activities <br class='hidden lg:block' />and treatments are crafted to address your specific goals.</p>"
+        content="<p>At Aluman we redefine luxury as an experience that not only pampers the senses but also nurtures <br class='hidden lg:block' />the soul. Nestled in a pristine natural environment, our eco-luxury retreat is a sanctuary designed to <br class='hidden lg:block' />inspire healing and transformation. We believe in the power of dedicated attention and care. That's <br class='hidden lg:block' />why our year-round individualized retreat programs are tailored to suit your every need. Whether <br class='hidden lg:block' /> you seek relaxation, rejuvenation or profound inner change, our meticulously designed activities <br class='hidden lg:block' />and treatments are crafted to address your specific goals.</p>"
       />
 
       {/* SECTION 3: Retreat Programs Tabs */}
@@ -408,7 +408,7 @@ export default function RetreatsPage() {
         title="Escape the stress of modern life and join<br/>us on a journey to wellness."
         buttonText="LEARN MORE"
         buttonHref="#learnmore"
-        optionalSubtitle="@ulamanbali"
+        optionalSubtitle="@Alumanbali"
       />
       <LocationMap />
       <Footer />

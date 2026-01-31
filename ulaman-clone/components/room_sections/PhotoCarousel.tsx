@@ -62,7 +62,7 @@ export default function PhotoCarousel() {
           letterSpacing: '-0.02em'
         }}
       >
-        ULAMAN
+        ALUMAN
       </div>
 
       {/* Background Scrolling Text - Right Moving */}

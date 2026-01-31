@@ -12,7 +12,7 @@ const Hero = ({
   heroImage = 'https://images.unsplash.com/photo-1582719508461-905c673771fd?w=1920&h=1080&fit=crop&q=80',
   leftNavItems = defaultLeftNavItems,
   rightButton = defaultButton,
-  logoText = 'ULAMAN',
+  logoText = 'ALUMAN',
   logoSubtext = 'Eco Luxury Resort',
   showLogo = true
 }: HeroProps) => {
