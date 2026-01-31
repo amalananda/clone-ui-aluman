@@ -35,7 +35,7 @@ const Wellness = () => {
             wordBreak: 'keep-all'
           }}
         >
-          At Ulaman we redefine luxury as an experience that not only <br className="hidden sm:block" />
+          At Aluman we redefine luxury as an experience that not only <br className="hidden sm:block" />
           pampers the senses but also nurtures the soul. Nestled in <br className="hidden sm:block" />
           pristine nature, our eco-luxury retreat offers a sanctuary for <br className="hidden sm:block" />
           healing and transformation. With personalized programs year-<br className="hidden sm:block" />

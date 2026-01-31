@@ -51,7 +51,7 @@ const Explore = () => {
             <div className="relative w-full h-full">
               <Image
                 src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&h=1000&fit=crop"
-                alt="Ulaman Salad"
+                alt="Aluman Salad"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 768px) 100vw, 33vw"

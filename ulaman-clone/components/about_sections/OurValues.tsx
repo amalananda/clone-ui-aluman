@@ -24,7 +24,7 @@ export default function OurValues() {
           <div className="bg-white/95 backdrop-blur-sm p-8 rounded-lg">
             <h3 className="text-2xl font-serif text-[#c9a961] mb-4">Balance and Harmony</h3>
             <p className="text-stone-700 text-sm leading-relaxed">
-              At Ulaman, we believe in the Balinese philosophy and principles of &apos;Tri Hita Karana&apos; integrating <em>balance and harmony with nature.</em> Surrounded by the sounds of water, jungle and tranquil rice terraces encourages personal growth in harmony with Mother nature&apos;s rhythms.
+              At Aluman, we believe in the Balinese philosophy and principles of &apos;Tri Hita Karana&apos; integrating <em>balance and harmony with nature.</em> Surrounded by the sounds of water, jungle and tranquil rice terraces encourages personal growth in harmony with Mother nature&apos;s rhythms.
             </p>
           </div>
 
@@ -32,7 +32,7 @@ export default function OurValues() {
           <div className="bg-white/95 backdrop-blur-sm p-8 rounded-lg">
             <h3 className="text-2xl font-serif text-[#c9a961] mb-4">People are Our Priority</h3>
             <p className="text-stone-700 text-sm leading-relaxed">
-              We are dedicated to creating a community rooted in compassion and family values, promoting eco-friendly practices and empowerment. This commitment cultivates authenticity and potential among all team members, ensuring our guests <em>feel valued, well cared for, and part of the Ulaman family.</em>
+              We are dedicated to creating a community rooted in compassion and family values, promoting eco-friendly practices and empowerment. This commitment cultivates authenticity and potential among all team members, ensuring our guests <em>feel valued, well cared for, and part of the Aluman family.</em>
             </p>
           </div>
 
@@ -40,7 +40,7 @@ export default function OurValues() {
           <div className="bg-white/95 backdrop-blur-sm p-8 rounded-lg">
             <h3 className="text-2xl font-serif text-[#c9a961] mb-4">Self-sustainable Community</h3>
             <p className="text-stone-700 text-sm leading-relaxed">
-              Ulaman embodies a self-sustainable community rooted in compassion and authenticity. We prioritize operational excellence, honesty, integrity, and dedication, <em>empowering individuals to heal and embody their best selves effortlessly.</em>
+              Aluman embodies a self-sustainable community rooted in compassion and authenticity. We prioritize operational excellence, honesty, integrity, and dedication, <em>empowering individuals to heal and embody their best selves effortlessly.</em>
             </p>
           </div>
         </div>

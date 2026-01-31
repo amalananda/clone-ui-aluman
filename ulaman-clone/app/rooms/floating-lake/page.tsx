@@ -23,8 +23,8 @@ export default function FloatingLakePage() {
         title="Floating Lake"
         subtitle="4 Units Total | 52m2"
         paragraphs={[
-          "Set above Bali's only bio-filtered, koi-filled lake, Ulaman's Floating Lake Villas offer a<br/> serene and luxurious experience unlike any other.Each villa features a private<br/> floating deck and a sunken round hammock, thoughtfully designed for couples—<br/>perfect for stargazing or feeding the koi below. Seamlessly blending modern<br/> tropical elegance with natural elements, the villas include a sun deck patio, hanging<br/> net, and a handcrafted teakwood bathtub.",
-          "Expansive glass doors invite natural light and reveal tranquil lake views. Inside,<br/> automatic curtains, a spacious layout, and attentive service create a peaceful<br/> retreat that reflects Ulaman's eco-luxury philosophy—perfect for relaxation and<br/> rejuvenation."
+          "Set above Bali's only bio-filtered, koi-filled lake, Aluman's Floating Lake Villas offer a<br/> serene and luxurious experience unlike any other.Each villa features a private<br/> floating deck and a sunken round hammock, thoughtfully designed for couples—<br/>perfect for stargazing or feeding the koi below. Seamlessly blending modern<br/> tropical elegance with natural elements, the villas include a sun deck patio, hanging<br/> net, and a handcrafted teakwood bathtub.",
+          "Expansive glass doors invite natural light and reveal tranquil lake views. Inside,<br/> automatic curtains, a spacious layout, and attentive service create a peaceful<br/> retreat that reflects Aluman's eco-luxury philosophy—perfect for relaxation and<br/> rejuvenation."
         ]}
         buttonText="BOOK THIS VILLA"
       />
@@ -45,7 +45,7 @@ export default function FloatingLakePage() {
         title="Reconnect With Yourself In<br/>Luxurious Comfort."
         buttonText="BOOK YOUR STAY"
         buttonHref="#book"
-        optionalSubtitle="@ulamanbali"
+        optionalSubtitle="@alumanbali"
       />
       <LocationMap />
       <Footer />

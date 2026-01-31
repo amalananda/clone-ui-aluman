@@ -147,7 +147,7 @@ export default function VillaRooms() {
                 <div className="bg-[#EDE6D8]">King sized bed</div>
               </div>
               <p className="text-[#343E35] text-[15.98px] font-basis mb-8">
-                Set above Bali&apos;s only bio-filtered, koi-filled lake, Ulaman&apos;s Floating Lake Villas offer a serene and luxurious experience unlike any other. Each villa features a private floating deck and a sunken round hammock, thoughtfully designed for couples—perfect for stargazing or feeding the koi below. Seamlessly blending modern tropical elegance with natural elements, the villas include a sun deck patio, hanging net, and a handcrafted teakwood bathtub.
+                Set above Bali&apos;s only bio-filtered, koi-filled lake, Aluman&apos;s Floating Lake Villas offer a serene and luxurious experience unlike any other. Each villa features a private floating deck and a sunken round hammock, thoughtfully designed for couples—perfect for stargazing or feeding the koi below. Seamlessly blending modern tropical elegance with natural elements, the villas include a sun deck patio, hanging net, and a handcrafted teakwood bathtub.
               </p>
               <div className="flex gap-8">
                 <UnderlineLink onClick={() => {
@@ -182,7 +182,7 @@ export default function VillaRooms() {
                     <div className="bg-[#EDE6D8]">King sized bed</div>
                   </div>
                   <p className="text-[#343E35] md:text-[15.98px] font-basis max-w-lg md:mt-8">
-                    Set above Bali&apos;s only bio-filtered, koi-filled lake, Ulaman&apos;s Floating<br /> Lake Villas offer a serene and luxurious experience unlike any other.<br />
+                    Set above Bali&apos;s only bio-filtered, koi-filled lake, Aluman&apos;s Floating<br /> Lake Villas offer a serene and luxurious experience unlike any other.<br />
                     Each villa features a private floating deck and a sunken round<br />
                     hammock, thoughtfully designed for couples—perfect for stargazing<br />
                     or feeding the koi below. Seamlessly blending modern tropical<br />
@@ -300,7 +300,7 @@ export default function VillaRooms() {
                 <div className="bg-[#EDE6D8]">King sized bed</div>
               </div>
               <p className="text-[#343E35] text-[15.98px] font-basis mb-8">
-                Elevated among the treetops, the Cocoon Jungle Villa is a bamboo-woven sanctuary featuring a black bamboo bathroom and a spacious private balcony—perfect for romantic breakfasts overlooking the jungle, garden, and pool. These elegantly designed, cocoon-like villas offer bamboo floors, the largest private balcony among all room types, and the most refined ensuite bathroom at Ulaman.
+                Elevated among the treetops, the Cocoon Jungle Villa is a bamboo-woven sanctuary featuring a black bamboo bathroom and a spacious private balcony—perfect for romantic breakfasts overlooking the jungle, garden, and pool. These elegantly designed, cocoon-like villas offer bamboo floors, the largest private balcony among all room types, and the most refined ensuite bathroom at Aluman.
               </p>
               <div className="flex gap-8">
                 <UnderlineLink onClick={() => {
@@ -394,7 +394,7 @@ export default function VillaRooms() {
                     overlooking the jungle, garden, and pool. These elegantly designed,<br />
                     cocoon-like villas offer bamboo floors, the largest private balcony<br />
                     among all room types, and the most refined ensuite bathroom at<br />
-                    Ulaman.
+                    Aluman.
                   </p>
                 </div>
 
@@ -477,7 +477,7 @@ export default function VillaRooms() {
                 <div className="bg-[#EDE6D8]">King sized bed</div>
               </div>
               <p className="text-[#343E35] text-[15.98px] font-basis mb-8">
-                Elevated among the treetops, Ulaman&apos;s Avatar Tree House Villas offer a truly unique sanctuary, surrounded by breathtaking rice field views and lush jungle landscapes. Perched 9 meters above ground and accessed via a striking bamboo-woven tunnel, these villas immerse guests in a seamless blend of architectural elegance and natural serenity.
+                Elevated among the treetops, Aluman&apos;s Avatar Tree House Villas offer a truly unique sanctuary, surrounded by breathtaking rice field views and lush jungle landscapes. Perched 9 meters above ground and accessed via a striking bamboo-woven tunnel, these villas immerse guests in a seamless blend of architectural elegance and natural serenity.
               </p>
               <div className="flex gap-8">
                 <UnderlineLink onClick={() => {
@@ -512,7 +512,7 @@ export default function VillaRooms() {
                     <div className="bg-[#EDE6D8]">King sized bed</div>
                   </div>
                   <p className="text-[#343E35] md:text-[15.98px] font-basis max-w-lg md:mt-8">
-                    Elevated among the treetops, Ulaman&apos;s Avatar Tree House Villas<br />
+                    Elevated among the treetops, Aluman&apos;s Avatar Tree House Villas<br />
                     offer a truly unique sanctuary, surrounded by breathtaking rice field<br />
                     views and lush jungle landscapes. Perched 9 meters above ground<br />
                     and accessed via a striking bamboo-woven tunnel, these villas<br />

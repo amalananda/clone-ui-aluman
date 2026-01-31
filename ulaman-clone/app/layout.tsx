@@ -29,20 +29,20 @@ const basisGrotesque = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Ulaman Eco Luxury Resort | Bali",
+  title: "Aluman Eco Luxury Resort | Bali",
   description: "Experience unparalleled eco-luxury in the heart of Bali's pristine jungle. Where sustainability meets sophistication.",
-  keywords: ["eco resort", "bali", "luxury", "sustainable", "bamboo", "eco-luxury", "ulaman"],
-  authors: [{ name: "Ulaman Bali" }],
+  keywords: ["eco resort", "bali", "luxury", "sustainable", "bamboo", "eco-luxury", "aluman"],
+  authors: [{ name: "Aluman Bali" }],
   openGraph: {
-    title: "Ulaman Eco Luxury Resort | Bali",
+    title: "Aluman Eco Luxury Resort | Bali",
     description: "Experience unparalleled eco-luxury in the heart of Bali's pristine jungle",
-    siteName: "Ulaman Bali",
+    siteName: "Aluman Bali",
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Ulaman Eco Luxury Resort",
+        alt: "Aluman Eco Luxury Resort",
       },
     ],
     locale: "en_US",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ulaman Eco Luxury Resort | Bali",
+    title: "Aluman Eco Luxury Resort | Bali",
     description: "Experience unparalleled eco-luxury in the heart of Bali's pristine jungle",
     images: ["/images/twitter-image.jpg"],
   },

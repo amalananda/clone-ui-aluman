@@ -9,7 +9,7 @@ export default function Accommodations() {
           {/* Left Text */}
           <div className="text-[#343E35] font-basis">
             <p className="text-[0.9048rem] md:text-[0.999rem] leading-relaxed mb-4">
-              All of our villas and rooms have their own unique charm. Ulaman offers a
+              All of our villas and rooms have their own unique charm. Aluman offers a
               variety of luxurious accommodations, each designed to <em className="italic">immerse guests
                 in nature&apos;s tranquility and beauty</em>. Our rooms and villas feature eco-friendly materials, luxurious comforts, and open-air living spaces that{' '}
               <em className="italic">blend seamlessly with the environment</em>.
@@ -20,7 +20,7 @@ export default function Accommodations() {
           <div className="text-[#343E35] font-basis">
             <p className="text-[0.9048rem] md:text-[0.999rem] leading-relaxed">
               Guests can enjoy private plunge pools, stunning views of rice fields and
-              lakes, and unique architectural designs. Ulaman provides <em className="italic">a harmonious
+              lakes, and unique architectural designs. Aluman provides <em className="italic">a harmonious
                 blend of luxury and nature</em>, ensuring a relaxing and unforgettable stay.
             </p>
           </div>

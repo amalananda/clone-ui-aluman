@@ -11,7 +11,7 @@ export default function Awards() {
 
           <div className="space-y-6">
             {[
-              { award: 'Winner of World Luxury Spa Awards', org: 'Riverside Spa by Ulaman', year: '2024' },
+              { award: 'Winner of World Luxury Spa Awards', org: 'Riverside Spa by Aluman', year: '2024' },
               { award: 'Winner of Sustainable Hotel of the Year', org: 'Ahead Asia', year: '2023' },
               { award: 'Winner Lodges, Cabins, and Tented Camps', org: 'Ahead Asia', year: '2023' },
               { award: 'TripAdvisor Travelers Choice Award', org: '', year: '2021 - 2023 - 2024' },

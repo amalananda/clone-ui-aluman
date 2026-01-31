@@ -72,14 +72,14 @@ const About = () => {
   const mainTextMobile =
     "Nestled among the rice |BREAK|" +
     "fields and coconut trees |BREAK|" +
-    "of Tabanan, Ulaman is |BREAK|" +
+    "of Tabanan, Aluman is |BREAK|" +
     "only 20 minutes away |BREAK|" +
     "from the vibrant town of |BREAK|" +
     "Canggu."
 
   const mainTextDesktop =
     "Nestled among the rice fields and |BREAK|" +
-    "coconut trees of Tabanan, Ulaman |BREAK|" +
+    "coconut trees of Tabanan, Aluman |BREAK|" +
     "is only 20 minutes away from the |BREAK|" +
     "vibrant town of Canggu."
 
@@ -104,7 +104,7 @@ const About = () => {
     "nature in a healing, luxurious environment.|BREAK|"
 
   const bodyText =
-    "We believe nature and luxury can coexist. Ulaman Eco Luxury Resort offers a |BREAK|" +
+    "We believe nature and luxury can coexist. Aluman Eco Luxury Resort offers a |BREAK|" +
     "secluded, lush haven with luxurious amenities and impeccable service. |BREAK|" +
     "Immerse yourself in traditional Balinese culture and leave feeling renewed, all|BREAK|" +
     "while minimizing your ecological footprint. Recharge your mind, body, and |BREAK|" +
@@ -120,7 +120,7 @@ const About = () => {
   const sliderData: Slide[] = [
     {
       src: 'https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&h=1000&fit=crop&q=80',
-      alt: 'Ulaman Eco Resort Exterior View',
+      alt: 'Aluman Eco Resort Exterior View',
       title: titleText,
       body: bodyText
     },

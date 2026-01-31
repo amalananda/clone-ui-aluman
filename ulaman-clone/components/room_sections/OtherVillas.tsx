@@ -34,7 +34,7 @@ export default function OtherVillas() {
           </h2>
           <p className="text-[#6B5D4F] max-w-md leading-relaxed mb-12">
             All of our villas and rooms have their <span className="italic">own unique charm</span>.
-            Ulaman offers a variety of luxurious accommodations, each designed to
+            Aluman offers a variety of luxurious accommodations, each designed to
             immerse guests in nature&apos;s tranquility and beauty.
           </p>
 
@@ -85,12 +85,12 @@ export default function OtherVillas() {
         </div>
         <div className="max-w-7xl mx-auto text-center">
           <a
-            href="https://instagram.com/ulamanbali"
+            href="https://instagram.com/alumanbali"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#C5A572] hover:text-[#8B7355] transition"
           >
-            @ulamanbali
+            @alumanbali
           </a>
         </div>
       </div>

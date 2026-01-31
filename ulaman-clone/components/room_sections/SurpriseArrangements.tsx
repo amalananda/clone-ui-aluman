@@ -207,7 +207,7 @@ export default function SurpriseArrangements() {
                   </h2>
                   <p className="text-[#6B5D4F] text-base leading-relaxed font-light max-w-md">
                     All of our villas and rooms have their <span className="italic font-normal">own unique charm</span>.
-                    Ulaman offers a variety of luxurious accommodations, each designed to
+                    Aluman offers a variety of luxurious accommodations, each designed to
                     immerse guests in nature&apos;s tranquility and beauty.
                   </p>
                 </div>

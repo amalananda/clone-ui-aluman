@@ -24,7 +24,7 @@ interface SpaHeroProps {
 const defaultLeftNavItems: NavItem[] = [
   { label: 'Home', href: '/' },
   { label: 'Treatments', href: '#treatments' },
-  { label: 'Ulaman', href: '/ulaman' },
+  { label: 'Aluman', href: '/aluman' },
   { label: 'Contact', href: '#contact' }
 ]
 
