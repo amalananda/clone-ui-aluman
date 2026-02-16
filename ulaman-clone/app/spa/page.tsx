@@ -103,7 +103,7 @@ export default function SpaPage() {
           {!galleryLoading && (
             <div className="text-center mb-4">
               <p className="text-xs text-gray-500">
-                {isFromBackend ? '✅ Data from Backend' : '📦 Data from Local JSON'}
+                {isFromBackend}
               </p>
             </div>
           )}
@@ -122,7 +122,7 @@ export default function SpaPage() {
                 tablet: 3,
                 desktop: 3
               }}
-              columnWidth={347.44}
+              columnWidth={9999}
               gap={16}
               showLightbox={true}
             />
