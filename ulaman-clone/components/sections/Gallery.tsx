@@ -39,7 +39,7 @@ const Gallery = ({
 
   return (
     <section id="gallery" className="py-8 sm:py-12 md:py-16 lg:py-24" style={{ backgroundColor }}>
-      <div className="max-w-[1600px] mx-auto px-2 sm:px-3 md:px-4 lg:px-6 xl:px-8">
+      <div className="w-full px-2 sm:px-3 md:px-4 lg:px-6 xl:px-8">
         {showTitle && (title || subtitle) && (
           <div className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">
             {subtitle && (
@@ -65,6 +65,7 @@ const Gallery = ({
             desktop: 3
           }}
           gap={8}
+          columnWidth={9999}
           showLightbox={true}
           className="gallery-grid-responsive"
         />
