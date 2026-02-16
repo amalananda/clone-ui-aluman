@@ -2,12 +2,15 @@
 'use client'
 import Image from 'next/image'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import UnderlineLink from '@/components/ui/UnderlineLink'
 import ImageNavControls from '@/components/ui/ImageNavControls'
 
 const Experiences = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null)
+  const [canScrollLeft, setCanScrollLeft] = useState(false)
+  const [canScrollRight, setCanScrollRight] = useState(true)
+
   const [imageIndices, setImageIndices] = useState<{ [key: number]: number }>({
     1: 0,
     2: 0,
@@ -81,16 +84,43 @@ const Experiences = () => {
   ]
 
   // 🔑 LOGIKA SCROLL NAVIGASI
-  const scroll = (direction: 'left' | 'right') => {
-    if (scrollContainerRef.current) {
-      const scrollAmount = 450
-      if (direction === 'left') {
-        scrollContainerRef.current.scrollBy({ left: -scrollAmount, behavior: 'smooth' })
-      } else {
-        scrollContainerRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' })
-      }
-    }
+
+  const checkScrollPosition = () => {
+    const container = scrollContainerRef.current
+    if (!container) return
+
+    const { scrollLeft, scrollWidth, clientWidth } = container
+
+    setCanScrollLeft(scrollLeft > 0)
+    setCanScrollRight(scrollLeft + clientWidth < scrollWidth - 1)
   }
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (!scrollContainerRef.current) return
+
+    const container = scrollContainerRef.current
+    const scrollAmount = container.clientWidth * 0.9
+
+    container.scrollBy({
+      left: direction === 'left' ? -scrollAmount : scrollAmount,
+      behavior: 'smooth',
+    })
+  }
+
+  useEffect(() => {
+    const container = scrollContainerRef.current
+    if (!container) return
+
+    checkScrollPosition()
+
+    container.addEventListener('scroll', checkScrollPosition)
+    window.addEventListener('resize', checkScrollPosition)
+
+    return () => {
+      container.removeEventListener('scroll', checkScrollPosition)
+      window.removeEventListener('resize', checkScrollPosition)
+    }
+  }, [])
 
   // Navigation untuk image carousel
   const handlePrevImage = (expId: number, totalImages: number) => {
@@ -127,14 +157,24 @@ const Experiences = () => {
           <div className="hidden lg:flex flex-col items-center lg:w-[10vw] lg:h-[12vw] xl:w-[5vw] xl:h-[15vw] flex-shrink-0 space-y-8 border-current lg:mr-[1vw] lg:ml-[2vw] xl:ml-[-3vw]">
             <button
               onClick={() => scroll('left')}
-              className="p-[1.5vw] border border-[#C69C4D] transition-all duration-300 text-[#C69C4D]"
+              disabled={!canScrollLeft}
+              className={`p-[1.5vw] border transition-all duration-300
+                ${canScrollLeft
+                  ? 'text-[#C69C4D] border-[#C69C4D]'
+                  : 'text-[#C69C4D]/30 border-[#C69C4D]/30 cursor-not-allowed'}
+              `}
               aria-label="Scroll left"
             >
               <ArrowLeft className="w-[2vw] h-[2vw]" />
             </button>
             <button
               onClick={() => scroll('right')}
-              className="p-[1.5vw] border border-[#C69C4D] transition-all duration-300 text-[#C69C4D]"
+              disabled={!canScrollRight}
+              className={`p-[1.5vw] border transition-all duration-300
+                ${canScrollRight
+                  ? 'text-[#C69C4D] border-[#C69C4D]'
+                  : 'text-[#C69C4D]/30 border-[#C69C4D]/30 cursor-not-allowed'}
+              `}
               aria-label="Scroll right"
             >
               <ArrowRight className="w-[2vw] h-[2vw]" />
@@ -144,8 +184,7 @@ const Experiences = () => {
           <div className="w-full">
             <div
               ref={scrollContainerRef}
-              className="flex space-x-4 md:space-x-6 lg:space-x-8 pb-4 snap-x snap-mandatory scrollbar-hide pr-4 md:pr-10 pl-0"
-            >
+              className="flex overflow-x-hidden space-x-4 md:space-x-6 lg:space-x-8 pb-4 snap-x snap-center pr-4 md:pr-10 pl-0 select-none scroll-smooth">
               {experiences.map((exp) => {
                 const currentIndex = imageIndices[exp.id] || 0
                 const currentImage = exp.images[currentIndex]
@@ -188,7 +227,7 @@ const Experiences = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   )
 }
 
