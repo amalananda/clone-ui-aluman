@@ -219,7 +219,7 @@ const Footer = () => {
                 </UnderlineLink>
                 <span className="text-[#EFEBE2] text-[0.734rem] md:text-[0.824rem] md:w-auto">Kids under 6 are not advised.</span>
               </div>
-              <span className="w-full text-[#EFEBE2] text-[0.734rem] md:text-[0.824rem] md:w-auto">© 2024-2025 Two Moons Studio for alumanbali.com. All Rights Reserved</span>
+              <span className="w-full text-[#EFEBE2] text-[0.734rem] md:text-[0.824rem] md:w-auto">© 2024-2025 Two Suns Studio for alumanbali.com. All Rights Reserved</span>
               <span className="w-full text-[#EFEBE2] text-[0.734rem] md:text-[0.824rem] md:w-auto">Made With ❤︎ By Two Suns Studio </span>
             </div>
           </div>
