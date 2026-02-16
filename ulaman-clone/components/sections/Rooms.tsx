@@ -12,6 +12,9 @@ const SINGLE_HERO_IMAGE =
 
 const RoomsPackages = () => {
   const [isDesktop, setIsDesktop] = useState(false)
+  const [canScrollLeft, setCanScrollLeft] = useState(false)
+  const [canScrollRight, setCanScrollRight] = useState(true)
+
 
   useEffect(() => {
     const checkScreenSize = () => {
@@ -52,6 +55,29 @@ const RoomsPackages = () => {
       }
     }
   }
+  const checkScrollPosition = () => {
+    if (!scrollContainerRef.current) return
+
+    const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef.current
+
+    setCanScrollLeft(scrollLeft > 0)
+    setCanScrollRight(scrollLeft + clientWidth < scrollWidth - 1)
+  }
+  useEffect(() => {
+    const container = scrollContainerRef.current
+    if (!container) return
+
+    checkScrollPosition()
+
+    container.addEventListener('scroll', checkScrollPosition)
+    window.addEventListener('resize', checkScrollPosition)
+
+    return () => {
+      container.removeEventListener('scroll', checkScrollPosition)
+      window.removeEventListener('resize', checkScrollPosition)
+    }
+  }, [])
+
 
   return (
     <>
@@ -101,16 +127,21 @@ const RoomsPackages = () => {
             <div className="hidden lg:flex flex-col items-center lg:w-[10vw] lg:h-[12vw] xl:w-[5vw] xl:h-[15vw] flex-shrink-0 space-y-8 border-current lg:mr-[1vw] lg:ml-[2vw] xl:ml-[-3vw]">
               <button
                 onClick={() => scroll('left')}
-                className="p-[1.5vw] border border-[#C69C4D] transition-all duration-300 text-[#C69C4D]"
-                aria-label="Scroll left"
-              >
+                disabled={!canScrollLeft}
+                className={`p-[1.5vw] border transition-all duration-300${canScrollLeft
+                  ? 'border-[#C69C4D] text-[#C69C4D]'
+                  : 'border-[#C69C4D]/30 text-[#C69C4D]/30 cursor-not-allowed'}`}
+                aria-label="Scroll left">
                 <ArrowLeft className="w-[2vw] h-[2vw]" />
               </button>
+
               <button
                 onClick={() => scroll('right')}
-                className="p-[1.5vw] border border-[#C69C4D] transition-all duration-300 text-[#C69C4D]"
-                aria-label="Scroll right"
-              >
+                disabled={!canScrollRight}
+                className={`p-[1.5vw] border transition-all duration-300${canScrollRight
+                  ? 'border-[#C69C4D] text-[#C69C4D]'
+                  : 'border-[#C69C4D]/30 text-[#C69C4D]/30 cursor-not-allowed'}`}
+                aria-label="Scroll right">
                 <ArrowRight className="w-[2vw] h-[2vw]" />
               </button>
             </div>
@@ -127,13 +158,16 @@ const RoomsPackages = () => {
                     className="flex-none snap-start group relative overflow-hidden w-[311.21px] md:w-[343.65px] md:snap-center"
                   >
                     <div className="relative ">
-                      {/* GAMBAR */}
-                      <div className="relative h-[329.88px] md:h-[364.27px] overflow-hidden rounded-lg">
+                      {/* BACKGROUND OFFSET CARD */}
+                      <div className="absolute bottom-31 right-2 md:bottom-35 md:right-2 w-50 h-50 md:w-60 md:h-60 bg-[#D6C6A5] rounded-lg z-0" />
+
+                      {/* IMAGE */}
+                      <div className="relative h-[309.88px] md:h-[364.27px] w-[291.21px] md:w-[323.65px] overflow-hidden rounded-lg z-10">
                         <Image
                           src={pkg.image}
                           alt={pkg.name}
                           fill
-                          className="w-full h-full object-cover "
+                          className="object-cover"
                           sizes="(max-width: 768px) 85vw, (max-width: 1024px) 45vw, 40vw"
                         />
                       </div>
