@@ -14,6 +14,15 @@ export default function VillaRooms() {
   const pathname = usePathname()
   const [isBookingOpen, setIsBookingOpen] = useState(false)
   const [selectedRoom, setSelectedRoom] = useState('Floating Lake')
+  const [canScroll1Left, setCanScroll1Left] = useState(false)
+  const [canScroll1Right, setCanScroll1Right] = useState(true)
+
+  const [canScroll2Left, setCanScroll2Left] = useState(false)
+  const [canScroll2Right, setCanScroll2Right] = useState(true)
+
+  const [canScroll3Left, setCanScroll3Left] = useState(false)
+  const [canScroll3Right, setCanScroll3Right] = useState(true)
+
 
   const floatingLake = [
     {
@@ -49,13 +58,6 @@ export default function VillaRooms() {
   ]
   const filteredRooms = rooms.filter((rooms) => !pathname.includes(rooms.link))
 
-  // Scroll ke kanan (item terakhir) saat component mount untuk section 1
-  useEffect(() => {
-    if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollLeft = scrollContainerRef.current.scrollWidth
-    }
-  }, [])
-
   const scroll = (direction: 'left' | 'right') => {
     if (scrollContainerRef.current) {
       const scrollAmount = 420
@@ -84,6 +86,47 @@ export default function VillaRooms() {
       })
     }
   }
+  const checkScroll = (
+    ref: React.RefObject<HTMLDivElement | null>,
+    setLeft: (v: boolean) => void,
+    setRight: (v: boolean) => void
+  ) => {
+    if (!ref.current) return
+
+    const { scrollLeft, scrollWidth, clientWidth } = ref.current
+
+    setLeft(scrollLeft > 0)
+    setRight(scrollLeft + clientWidth < scrollWidth - 5)
+  }
+
+
+  useEffect(() => {
+    const el1 = scrollContainerRef.current
+    const el2 = scrollContainerRef2.current
+    const el3 = scrollContainerRef3.current
+
+    if (el1)
+      el1.addEventListener('scroll', () =>
+        checkScroll(scrollContainerRef, setCanScroll1Left, setCanScroll1Right)
+      )
+
+    if (el2)
+      el2.addEventListener('scroll', () =>
+        checkScroll(scrollContainerRef2, setCanScroll2Left, setCanScroll2Right)
+      )
+
+    if (el3)
+      el3.addEventListener('scroll', () =>
+        checkScroll(scrollContainerRef3, setCanScroll3Left, setCanScroll3Right)
+      )
+
+    checkScroll(scrollContainerRef, setCanScroll1Left, setCanScroll1Right)
+    checkScroll(scrollContainerRef2, setCanScroll2Left, setCanScroll2Right)
+    checkScroll(scrollContainerRef3, setCanScroll3Left, setCanScroll3Right)
+
+  }, [])
+
+
   useEffect(() => {
     if (isBookingOpen) {
       document.body.style.overflow = 'hidden'
@@ -207,13 +250,20 @@ export default function VillaRooms() {
                 <div className="flex gap-4 lg:items-end md:pt-28">
                   <button
                     onClick={() => scroll('left')}
-                    className="w-[79.91px] h-[79.91px] border-2 border-[#C5A572]/40 rounded-lg flex items-center justify-center hover:border-[#C5A572] hover:bg-[#C5A572]/5 transition-all duration-300"
+                    disabled={!canScroll1Left}
+                    className="w-[79.91px] h-[79.91px] border-2 rounded-lg flex items-center justify-center transition-all duration-300
+                              border-[#C5A572] hover:border-[#C5A572] hover:bg-[#C5A572]/5 disabled:opacity-30 disabled:border-[#C5A572]
+                              disabled:bg-transparent disabled:cursor-not-allowed"
                   >
+
                     <ChevronLeft size={24} strokeWidth={1.5} className="text-[#C5A572]" />
                   </button>
                   <button
                     onClick={() => scroll('right')}
-                    className="w-[79.91px] h-[79.91px] border-2 border-[#C5A572]/40 rounded-lg flex items-center justify-center hover:border-[#C5A572] hover:bg-[#C5A572]/5 transition-all duration-300"
+                    disabled={!canScroll1Right}
+                    className="w-[79.91px] h-[79.91px] border-2 rounded-lg flex items-center justify-center transition-all duration-300
+                              border-[#C5A572] hover:border-[#C5A572] hover:bg-[#C5A572]/5 disabled:opacity-30 disabled:border-[#C5A572]
+                              disabled:bg-transparent disabled:cursor-not-allowed"
                   >
                     <ChevronRight size={24} strokeWidth={1.5} className="text-[#C5A572]" />
                   </button>
@@ -415,13 +465,19 @@ export default function VillaRooms() {
                 <div className="flex gap-4 lg:items-end md:pt-12">
                   <button
                     onClick={() => scroll2('left')}
-                    className="w-[79.91px] h-[79.91px] border-2 border-[#C5A572]/40 rounded-lg flex items-center justify-center hover:border-[#C5A572] hover:bg-[#C5A572]/5 transition-all duration-300"
+                    disabled={!canScroll2Left}
+                    className="w-[79.91px] h-[79.91px] border-2 rounded-lg flex items-center justify-center transition-all duration-300
+                              border-[#C5A572] hover:border-[#C5A572] hover:bg-[#C5A572]/5 disabled:opacity-30 disabled:border-[#C5A572]
+                              disabled:bg-transparent disabled:cursor-not-allowed"
                   >
                     <ChevronLeft size={24} strokeWidth={1.5} className="text-[#C5A572]" />
                   </button>
                   <button
                     onClick={() => scroll2('right')}
-                    className="w-[79.91px] h-[79.91px] border-2 border-[#C5A572]/40 rounded-lg flex items-center justify-center hover:border-[#C5A572] hover:bg-[#C5A572]/5 transition-all duration-300"
+                    disabled={!canScroll2Right}
+                    className="w-[79.91px] h-[79.91px] border-2 rounded-lg flex items-center justify-center transition-all duration-300
+                              border-[#C5A572] hover:border-[#C5A572] hover:bg-[#C5A572]/5 disabled:opacity-30 disabled:border-[#C5A572]
+                              disabled:bg-transparent disabled:cursor-not-allowed"
                   >
                     <ChevronRight size={24} strokeWidth={1.5} className="text-[#C5A572]" />
                   </button>
@@ -537,15 +593,21 @@ export default function VillaRooms() {
                 <div className="flex gap-4 lg:items-end md:pt-28">
                   <button
                     onClick={() => scroll3('left')}
-                    className="w-[79.91px] h-[79.91px] border-2 border-[#C5A572]/40 rounded-lg flex items-center justify-center hover:border-[#C5A572] hover:bg-[#C5A572]/5 transition-all duration-300"
+                    disabled={!canScroll3Left}
+                    className="w-[79.91px] h-[79.91px] border-2 rounded-lg flex items-center justify-center transition-all duration-300
+                              border-[#C5A572] hover:border-[#C5A572] hover:bg-[#C5A572]/5 disabled:opacity-30 disabled:border-[#C5A572]
+                              disabled:bg-transparent disabled:cursor-not-allowed"
                   >
-                    <ChevronLeft size={24} strokeWidth={1.5} className="text-[#C5A572]" />
+                    <ChevronLeft size={24} strokeWidth={1.5} className="text-[#C69C4D]" />
                   </button>
                   <button
                     onClick={() => scroll3('right')}
-                    className="w-[79.91px] h-[79.91px] border-2 border-[#C5A572]/40 rounded-lg flex items-center justify-center hover:border-[#C5A572] hover:bg-[#C5A572]/5 transition-all duration-300"
+                    disabled={!canScroll3Right}
+                    className="w-[79.91px] h-[79.91px] border-2 rounded-lg flex items-center justify-center transition-all duration-300
+                              border-[#C5A572] hover:border-[#C5A572] hover:bg-[#C5A572]/5 disabled:opacity-30 disabled:border-[#C5A572]
+                              disabled:bg-transparent disabled:cursor-not-allowed"
                   >
-                    <ChevronRight size={24} strokeWidth={1.5} className="text-[#C5A572]" />
+                    <ChevronRight size={24} strokeWidth={1.5} className="text-[#C69C4D]" />
                   </button>
                 </div>
               </div>
