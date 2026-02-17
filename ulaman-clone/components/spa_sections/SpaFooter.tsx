@@ -130,7 +130,7 @@ const SpaFooter = () => {
                 <a href="#" className="hover:opacity-70 transition-opacity">VISIT ALUMANBALI.COM</a>
               </div>
               <div className="font-basis text-[#9A816D] text-[0.62rem] md:text-[0.57rem] text-start md:flex-1">
-                © 2024-2025 TWO MOONS STUDIO FOR RIVERSIDESPA@ALUMAN.COM. ALL RIGHTS RESERVED
+                © 2024-2025 TWO SUNS STUDIO FOR RIVERSIDESPA@ALUMAN.COM. ALL RIGHTS RESERVED
               </div>
             </div>
 
@@ -139,7 +139,7 @@ const SpaFooter = () => {
 
             {/* Right Credit */}
             <div className="font-basis text-[#9A816D] text-[0.57rem]">
-              MADE WITH ❤️ BY TWO MOONS STUDIO
+              MADE WITH ❤️ BY TWO SUNS STUDIO
             </div>
           </div>
         </div>

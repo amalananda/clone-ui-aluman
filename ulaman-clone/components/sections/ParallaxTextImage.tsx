@@ -26,6 +26,8 @@ const ParallaxTextImage = ({
   const [nextIndex, setNextIndex] = useState(0)
   const [direction, setDirection] = useState<'next' | 'prev'>('next')
   const [isAnimating, setIsAnimating] = useState(false)
+  const [canScrollLeft, setCanScrollLeft] = useState(false)
+  const [canScrollRight, setCanScrollRight] = useState(true)
   const sectionRef = useRef<HTMLElement>(null)
 
   const currentImage = images[currentIndex]
@@ -44,10 +46,16 @@ const ParallaxTextImage = ({
     handleScroll()
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+  useEffect(() => {
+    setCanScrollLeft(currentIndex > 0)
+    setCanScrollRight(currentIndex < images.length - 1)
+  }, [currentIndex, images.length])
+
 
   const handlePrev = () => {
-    if (isAnimating) return
-    const prevIdx = (currentIndex - 1 + images.length) % images.length
+    if (isAnimating || currentIndex === 0) return
+
+    const prevIdx = currentIndex - 1
     setNextIndex(prevIdx)
     setDirection('prev')
     setIsAnimating(true)
@@ -59,8 +67,9 @@ const ParallaxTextImage = ({
   }
 
   const handleNext = () => {
-    if (isAnimating) return
-    const nextIdx = (currentIndex + 1) % images.length
+    if (isAnimating || currentIndex === images.length - 1) return
+
+    const nextIdx = currentIndex + 1
     setNextIndex(nextIdx)
     setDirection('next')
     setIsAnimating(true)
@@ -70,6 +79,7 @@ const ParallaxTextImage = ({
       setIsAnimating(false)
     }, 600)
   }
+
 
   return (
     <section
@@ -168,8 +178,10 @@ const ParallaxTextImage = ({
           {/* Left Arrow */}
           <button
             onClick={handlePrev}
-            disabled={isAnimating}
-            className="absolute left-1/2 -translate-x-[calc(50%+40px)] md:left-[9%] md:translate-x-0 bottom-8 md:top-[85%] md:-translate-y-1/2 z-20 w-[58px] h-[58px] md:w-20 md:h-20 border-2 border-[rgb(183,159,140)] hover:border-[rgb(183,159,140)]/80 transition-colors duration-300 flex items-center justify-center group disabled:opacity-50 disabled:cursor-not-allowed"
+            disabled={!canScrollLeft || isAnimating}
+            className={`absolute left-1/2 -translate-x-[calc(50%+40px)] md:left-[9%] md:translate-x-0 bottom-8 md:top-[85%] md:-translate-y-1/2 z-20 w-[58px] h-[58px] md:w-20 md:h-20 border-2 transition-colors duration-300 flex items-center justify-center group
+            ${canScrollLeft ? 'border-[rgb(183,159,140)] hover:border-[rgb(183,159,140)]/80' : 'border-[rgb(183,159,140)]/30'}
+            disabled:opacity-50 disabled:cursor-not-allowed`}
             aria-label="Previous"
           >
             <svg
@@ -190,8 +202,10 @@ const ParallaxTextImage = ({
           {/* Right Arrow */}
           <button
             onClick={handleNext}
-            disabled={isAnimating}
-            className="absolute left-1/2 translate-x-[calc(-50%+40px)] md:right-[9%] md:left-auto md:translate-x-0 bottom-8 md:top-[85%] md:-translate-y-1/2 z-20 w-[58px] h-[58px] md:w-20 md:h-20 border-2 border-[rgb(183,159,140)] hover:border-[rgb(183,159,140)]/80 transition-colors duration-300 flex items-center justify-center group disabled:opacity-50 disabled:cursor-not-allowed"
+            disabled={!canScrollRight || isAnimating}
+            className={`absolute left-1/2 translate-x-[calc(-50%+40px)] md:right-[9%] md:left-auto md:translate-x-0 bottom-8 md:top-[85%] md:-translate-y-1/2 z-20 w-[58px] h-[58px] md:w-20 md:h-20 border-2 transition-colors duration-300 flex items-center justify-center group
+            ${canScrollRight ? 'border-[rgb(183,159,140)] hover:border-[rgb(183,159,140)]/80' : 'border-[rgb(183,159,140)]/30'}
+            disabled:opacity-50 disabled:cursor-not-allowed`}
             aria-label="Next"
           >
             <svg
