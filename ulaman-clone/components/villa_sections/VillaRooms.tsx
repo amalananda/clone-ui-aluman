@@ -43,17 +43,17 @@ export default function VillaRooms() {
     {
       id: 1,
       image: 'https://images.unsplash.com/photo-1540541338287-41700207dee6?w=800&h=1000&fit=crop',
-      link: '/rooms/cocoon-jungle'
+      link: '/rooms/floating-lake'
     },
     {
       id: 2,
       image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=1000&fit=crop',
-      link: '/rooms/avatar-tree-house'
+      link: '/rooms/cocoon-jungle'
     },
     {
       id: 3,
       image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&h=1000&fit=crop',
-      link: '/rooms/floating-lake'
+      link: '/rooms/avatar-tree-house'
     },
   ]
   const filteredRooms = rooms.filter((rooms) => !pathname.includes(rooms.link))
@@ -89,14 +89,23 @@ export default function VillaRooms() {
   const checkScroll = (
     ref: React.RefObject<HTMLDivElement | null>,
     setLeft: (v: boolean) => void,
-    setRight: (v: boolean) => void
+    setRight: (v: boolean) => void,
+    isReverse = false
   ) => {
     if (!ref.current) return
 
     const { scrollLeft, scrollWidth, clientWidth } = ref.current
 
-    setLeft(scrollLeft > 0)
-    setRight(scrollLeft + clientWidth < scrollWidth - 5)
+    if (!isReverse) {
+      setLeft(scrollLeft > 0)
+      setRight(scrollLeft + clientWidth < scrollWidth - 5)
+    } else {
+      // 🔥 khusus row-reverse
+      const maxScroll = scrollWidth - clientWidth
+
+      setLeft(scrollLeft < maxScroll - 5)
+      setRight(scrollLeft > 0)
+    }
   }
 
 
@@ -105,26 +114,42 @@ export default function VillaRooms() {
     const el2 = scrollContainerRef2.current
     const el3 = scrollContainerRef3.current
 
-    if (el1)
-      el1.addEventListener('scroll', () =>
-        checkScroll(scrollContainerRef, setCanScroll1Left, setCanScroll1Right)
-      )
+    const handler1 = () =>
+      checkScroll(scrollContainerRef, setCanScroll1Left, setCanScroll1Right)
 
-    if (el2)
-      el2.addEventListener('scroll', () =>
-        checkScroll(scrollContainerRef2, setCanScroll2Left, setCanScroll2Right)
-      )
+    const handler2 = () =>
+      checkScroll(scrollContainerRef2, setCanScroll2Left, setCanScroll2Right, true)
 
-    if (el3)
-      el3.addEventListener('scroll', () =>
-        checkScroll(scrollContainerRef3, setCanScroll3Left, setCanScroll3Right)
-      )
+    const handler3 = () =>
+      checkScroll(scrollContainerRef3, setCanScroll3Left, setCanScroll3Right)
 
-    checkScroll(scrollContainerRef, setCanScroll1Left, setCanScroll1Right)
-    checkScroll(scrollContainerRef2, setCanScroll2Left, setCanScroll2Right)
-    checkScroll(scrollContainerRef3, setCanScroll3Left, setCanScroll3Right)
+    if (el1) el1.addEventListener('scroll', handler1)
+    if (el2) el2.addEventListener('scroll', handler2)
+    if (el3) el3.addEventListener('scroll', handler3)
 
+    // 🔥 important: run AFTER next frame
+    requestAnimationFrame(() => {
+      handler1()
+      handler2()
+      handler3()
+    })
+
+    // 🔥 handle resize
+    window.addEventListener('resize', handler1)
+    window.addEventListener('resize', handler2)
+    window.addEventListener('resize', handler3)
+
+    return () => {
+      if (el1) el1.removeEventListener('scroll', handler1)
+      if (el2) el2.removeEventListener('scroll', handler2)
+      if (el3) el3.removeEventListener('scroll', handler3)
+
+      window.removeEventListener('resize', handler1)
+      window.removeEventListener('resize', handler2)
+      window.removeEventListener('resize', handler3)
+    }
   }, [])
+
 
 
   useEffect(() => {
@@ -200,10 +225,13 @@ export default function VillaRooms() {
                   BOOK NOW
                 </UnderlineLink>
                 <UnderlineLink
-                  href={filteredRooms[0].link}
+                  href="/rooms/floating-lake"
                   className="text-[#C69C4D]/50"
                   underlineColor="bg-[#C69C4D]/50"
-                >LEARN NOW</UnderlineLink>
+                >
+                  LEARN NOW
+                </UnderlineLink>
+
               </div>
             </div>
           </div>
@@ -241,10 +269,13 @@ export default function VillaRooms() {
                     BOOK NOW
                   </UnderlineLink>
                   <UnderlineLink
-                    href={filteredRooms[0].link}
+                    href="/rooms/floating-lake"
                     className="text-[#C69C4D]/50"
                     underlineColor="bg-[#C69C4D]/50"
-                  >LEARN NOW</UnderlineLink>
+                  >
+                    LEARN NOW
+                  </UnderlineLink>
+
                 </div>
 
                 <div className="flex gap-4 lg:items-end md:pt-28">
@@ -360,10 +391,13 @@ export default function VillaRooms() {
                   BOOK NOW
                 </UnderlineLink>
                 <UnderlineLink
-                  href={filteredRooms[0].link}
+                  href="/rooms/cocoon-jungle"
                   className="text-[#C69C4D]/50"
                   underlineColor="bg-[#C69C4D]/50"
-                >LEARN NOW</UnderlineLink>
+                >
+                  LEARN NOW
+                </UnderlineLink>
+
               </div>
             </div>
           </div>
@@ -456,10 +490,13 @@ export default function VillaRooms() {
                     BOOK NOW
                   </UnderlineLink>
                   <UnderlineLink
-                    href={filteredRooms[0].link}
+                    href="/rooms/cocoon-jungle"
                     className="text-[#C69C4D]/50"
                     underlineColor="bg-[#C69C4D]/50"
-                  >LEARN NOW</UnderlineLink>
+                  >
+                    LEARN NOW
+                  </UnderlineLink>
+
                 </div>
 
                 <div className="flex gap-4 lg:items-end md:pt-12">
@@ -543,10 +580,13 @@ export default function VillaRooms() {
                   BOOK NOW
                 </UnderlineLink>
                 <UnderlineLink
-                  href={filteredRooms[0].link}
+                  href="/rooms/avatar-tree-house"
                   className="text-[#C69C4D]/50"
                   underlineColor="bg-[#C69C4D]/50"
-                >LEARN NOW</UnderlineLink>
+                >
+                  LEARN NOW
+                </UnderlineLink>
+
               </div>
             </div>
           </div>
@@ -584,10 +624,13 @@ export default function VillaRooms() {
                     BOOK NOW
                   </UnderlineLink>
                   <UnderlineLink
-                    href={filteredRooms[0].link}
+                    href="/rooms/avatar-tree-house"
                     className="text-[#C69C4D]/50"
                     underlineColor="bg-[#C69C4D]/50"
-                  >LEARN NOW</UnderlineLink>
+                  >
+                    LEARN NOW
+                  </UnderlineLink>
+
                 </div>
 
                 <div className="flex gap-4 lg:items-end md:pt-28">
