@@ -96,35 +96,44 @@ export default function RetreatsPage() {
         <div className="max-w-7xl mx-auto">
 
           {/* Tab Headers */}
-          <div className="flex justify-center gap-8 mb-16">
+          <div className="relative flex justify-center gap-80 mb-16">
+
+            {/* Blur Line (custom width) */}
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[85%] h-[5px] bg-[#C5A572]/30" />
+
+            {/* Sliding Underline */}
+            <div
+              className={`absolute bottom-0 h-[5px] bg-[#C5A572] transition-all duration-500 ${activeTab === 'healing'
+                ? 'left-[7.5%] w-[42.5%]'
+                : 'left-[50%] w-[42.5%]'
+                }`}
+            />
+
             <button
               onClick={() => setActiveTab('healing')}
-              className={`relative font-americana text-2xl lg:text-3xl pb-3 transition-colors ${activeTab === 'healing' ? 'text-[#C5A572]' : 'text-[#C5A572]/40'
+              className={`relative pb-4 font-americana text-[22px] lg:text-[26px] text-[#C5A572] transition-colors ${activeTab === 'healing'
                 }`}
             >
               Healing Mind, Body & Soul
-              {activeTab === 'healing' && (
-                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#C5A572]" />
-              )}
             </button>
+
             <button
               onClick={() => setActiveTab('detox')}
-              className={`relative font-americana text-2xl lg:text-3xl pb-3 transition-colors ${activeTab === 'detox' ? 'text-[#C5A572]' : 'text-[#C5A572]/40'
+              className={`relative pb-4 font-americana text-[22px] lg:text-[26px] text-[#C5A572] transition-colors ${activeTab === 'detox'
                 }`}
             >
               Detox & Juice Cleanse Program
-              {activeTab === 'detox' && (
-                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#C5A572]" />
-              )}
             </button>
+
           </div>
 
+
           {/* Tab Content */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-18 items-start">
 
             {/* Left: Image Carousel */}
-            <div className="relative">
-              <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-2xl">
+            <div className="relative flex justify-end">
+              <div className="relative h-[400px] lg:h-[553px] w-[350px] lg:w-[503px]  overflow-hidden rounded-2xl shadow-2xl">
                 <Image
                   src={currentProgram.images[currentRetreatSlide]}
                   alt={currentProgram.title}
@@ -150,7 +159,7 @@ export default function RetreatsPage() {
             </div>
 
             {/* Right: Content */}
-            <div className="flex flex-col justify-between h-full space-y-8">
+            <div className="flex flex-col justify-between h-full space-y-20">
               <div>
                 <div>
                   <h2 className="font-americana text-xl lg:text-2xl text-[#C69C4D] mb-4">
